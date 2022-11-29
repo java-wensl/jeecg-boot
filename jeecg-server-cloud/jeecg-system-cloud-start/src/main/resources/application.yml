@@ -8,6 +8,12 @@ spring:
     nacos:
       config:
         server-addr: @config.server-addr@
+        # 命名空间
+        namespace: @config.server-namespace@
+        # nacos group
+        group: @config.server-group@
+        # 配置文件格式
+        file-extension: yml
       discovery:
         server-addr: ${spring.cloud.nacos.config.server-addr}
   config:

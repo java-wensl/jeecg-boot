@@ -407,17 +407,21 @@
                 <!--当前环境-->
                 <profile.name>dev</profile.name>
 				<!--Nacos服务地址-->
-                <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+                <config.server-addr>localhost:8849</config.server-addr>
+                <config.server-namespace>wsl-jeecg</config.server-namespace>
+                <config.server-group>DEFAULT_GROUP</config.server-group>
             </properties>
         </profile>
         <!-- 测试 -->
         <profile>
-            <id>test</id>
+            <id>docker</id>
             <properties>
                 <!--当前环境-->
-                <profile.name>test</profile.name>
+                <profile.name>docker</profile.name>
 				<!--Nacos服务地址-->
                 <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-namespace>wsl-jeecg</config.server-namespace>
+				<config.server-group>DEFAULT_GROUP</config.server-group>
             </properties>
         </profile>
         <!-- 生产 -->
@@ -428,6 +432,8 @@
                 <profile.name>prod</profile.name>
 				<!--Nacos服务地址-->
                 <config.server-addr>jeecg-boot-nacos:8848</config.server-addr>
+				<config.server-namespace>wsl-jeecg</config.server-namespace>
+				<config.server-group>DEFAULT_GROUP</config.server-group>
             </properties>
         </profile>
 		<!-- SpringCloud运行环境 -->
