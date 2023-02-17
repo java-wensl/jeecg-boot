@@ -480,8 +480,8 @@ Docker启动项目
 ![](https://oscimg.oschina.net/oscnet/59c23b230f52384e588ee16309b44fa20de.jpg)
 
 
-## 捐赠 
-
-如果觉得还不错，请作者喝杯咖啡吧 ☺
-
-![](https://static.oschina.net/uploads/img/201903/08155608_0EFX.png)
+## fork更新
+1、先提交本地更新
+2、git fetch upstream
+3、git merge upstream/master
+> 需要先本地项目关联fork的开源项目，此时可以使用 git remote -v 查看远程分支列表
